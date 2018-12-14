@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zoo Concepción</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<div id="page">
+<div id="app">
+  <div id="header"> <a href="#" id="logo"><img src="images/logo.jpg" alt=""/></a>             
+    <ul id="navigation">      
+      <li id="link1"><router-link to="/listar">Listar Animal</router-link></li>
+      <li id="link2"><router-link to="/agregar">Agregar Animal</router-link></li>
+      <li id="link3"><router-link to="/listarTipos">Listar Tipos</router-link></li>
+      <li id="link4"><router-link to="/agregarTipo">Agregar Tipos</router-link></li>      
+    </ul>
+    <img src="images/lion-family.jpg" alt=""/>  
+  </div>
+  <div id="content">
+    <div id="featured">
+      <h2>Sistema de Gestión</h2>          
+    </div>
+  </div>
+  <div style="width: 60%; margin-left: 20%">
+    <div>
+        <router-view></router-view>
+    </div>
+  </div>  
+</div>  
+  <div id="footer">
+    <div> <a href="#" class="logo"><img src="images/animal-kingdom.jpg" alt=""/></a>
+      <div>
+        <p></p>
+        <span></span> <span></span> </div>
+      <ul class="navigation">
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+      <p>Copyright &copy; - All Rights Reserved | Diego Moreno - Luis Ulloa </p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="servicios/config.js"></script>
+<script src="servicios/AnimalService.js"></script>
+<script src="servicios/SectorAnimalService.js"></script>
+<script src="servicios/TipoAnimalService.js"></script>
+<script src="componentes/listarAnimales.js"></script>
+<script src="componentes/listarTipos.js"></script>
+<script src="componentes/agregarTipoAnimal.js"></script>
+<script src="componentes/agregarAnimal.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
